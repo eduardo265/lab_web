@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 1</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #grad1 {
+          height: 2600px;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } </style>
+        <header class="header-p">
+            <h1 class="h1-t1">
+                TRABAJO 1
+            </h1>
+        </header>
+</head>
+<body>
+    <nav>
+        <a href="index.html"class="nav-p"> Inicio </a>
+        <a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+        <a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+    </nav>
+    <div id="grad1">
+        <h2>Direccion IP </h2>
+        Las direcciones IP (IP es un acronimo para Internet Protocol) son un numero unico e irrepetible con el cual se identifica una cmputadora conectada a una red que corre el protocolo IP.
+        Una direccion IP (o simplemente IP como a veces se les refiere) es un conjunto de cuatro numeros del 0 al 255 separados por puntos. Por ejemplo, uservers.net tiene la direccion IP siguiente:
+        200.36.127.40
+        En realidad una direccion IP es una forma mas sencilla de comprender numeros muy grandes, la direccion 200.36.127.40 es una forma mas corta de escribir el numero 3357835048. Esto se logra traduciendo el numero en cuatro tripletes.
+        Tipos de direcciones
+        Existen dos tipos de direcciones IP: las privadas y las publicas, que a su vez se pueden subdividir en IPs fijas o dinamicas.
+        <h2>MAC Address</h2>
+        La Mac Address o direccion Mac es una identificador unico de 48 bits para identificar la totalidad de dispositivos de red como por ejemplo tarjetas de red Ethernet, tarjetas de red wifi o inalambricas, Switch de red, Routers, impresoras, etc.
+        Las direcciones MAC son identificadores unicos a nivel mundial para cada dispositivo y por lo tanto es imposible encontrar 2 tarjetas de red o 2 dispositivos de red que tengan la misma Mac Address.
+        <h2>ISP </h2>
+        El ISP (siglas en ingles de Internet Service Provider), en informatica, es el Proveedor de Servicios de Internet, es decir, a la empresa que vende a los usuarios la conexion a Internet.
+        Asi, un mismo ISP brinda a su conjunto de clientes acceso a la Web a traves de distintos medios o tecnologias (DSL o banda ancha, Dialup, cablemodem, GSM, etc.), y en un mismo pais o region pueden existir diversos ISP, que constituyen entre todos un mercado.
+        Puertos bien conocidos
+        En las redes que utilizan los protocolos TCP/IP y UDP/IP, cuando un programa cliente necesita de un servicio particular de un servidor, ademas del tipo de servicio y localizacion del servidor, debe indicar el puerto (logico) por el que se establecera la conexion. En este sentido, un puerto es un extremo de una conexion logica. Los puertos se indican por numeros, y cuando los servicios se refieren a la Web, van incluidos en la sintaxis de la mayoria de las ULRs. Para que sea posible utilizar un servicio de un servidor es necesario que el puerto correspondiente del servidor sea el correcto y que este habilitado. Se podria decir que el servidor debe estar escuchando por dicho puerto.
+        Cabecera tcp/ip
+        Direccion IP de origen (4 bytes)
+        Puerto TCP o UDP de origen (2 bytes)
+        Direccion IP de destino (4 bytes)
+        Puerto TCP o UDP de destino (2 bytes)
+        La asignacion de puertos permite que una maquina pueda establecer simultaneamente diversas conexiones TCP/IP con maquinas distintas, ya que todos los paquetes que se reciben tienen la misma direccion IP, pero van dirigidla IANA (Internet Assigned Number Authority , Autoridad de Asignacion de Numeros en Internet). Realizo una asignacion de los numeros de puertos en tres categorias:
+        Puertos bien conocidos se encuentran entre 0 y 1023 son reservados como su nombre lo dice para servicios bien conocidos.
+        <h2>PROTOCOLO TCP/ IP</h2>
+        Se han desarrollado diferentes familias de protocolos para comunicación por red de datos para los sistemas UNIX. El más ampliamente utilizado es el Internet Protocol Suite, comúnmente conocido como TCP / IP.
+        Es un protocolo DARPA que proporciona transmisión fiable de paquetes de datos sobre redes. El nombre TCP / IP Proviene de dos protocolos importantes de la familia, el Transmission Contorl Protocol (TCP) y el Internet Protocol (IP). Todos juntos llegan a ser más de 100 protocolos diferentes definidos en este conjunto.
+        El TCP / IP es la base del Internet que sirve para enlazar computadoras que utilizan diferentes sistemas operativos, incluyendo PC, minicomputadoras y computadoras centrales sobre redes de área local y área extensa. TCP / IP fue desarrollado y demostrado por primera vez en 1972 por el departamento de defensa de los Estados Unidos, ejecutándolo en el ARPANET una red de área extensa del departamento de defensa.
+        
+        <h2>REDIRECCION DE PUERTOS </h2>
+        La redirección de puertos, a veces llamado tunelado de puertos, es la acción de redirigir un puerto de red de un nodo de red a otro. Esta técnica puede permitir que un usuario externo tenga acceso a un puerto en una dirección IP privada (dentro de una LAN) desde el exterior vía un router con NAT activado.
+        La redirección de puertos permite que computadoras remotas (por ejemplo, máquinas públicas en Internet) se conecten a un computador en concreto dentro de una LAN privada.
+        <h2>SERVIDOR WEB</h2>
+        Un servidor Web es un programa que utiliza el protocolo de transferencia de hiper texto, HTTP (Hypertext Transfer Protocol), para servir los archivos que forman páginas Web a los usuarios, en respuesta a sus solicitudes, que son reenviados por los clientes HTTP de sus computadoras. Las computadoras y los dispositivos dedicados también pueden denominarse servidores Web.
+        
+        El proceso es un ejemplo del modelo cliente/servidor. Todos los equipos que alojan sitios Web deben tener programas de servidor Web. Los principales servidores Web incluyen Apache (el servidor Web más ampliamente instalado), Internet Information Server (IIS) de Microsoft y nginx (que se pronuncia engine X) de NGNIX. Otros servidores Web incluyen el servidor NetWare de Novell, el servidor Web de Google (GWS) y la familia de servidores Domino de IBM.
+        
+        Los servidores Web a menudo forman parte de un paquete más amplio de programas relacionados con internet e intranet para servir correo electrónico, descargar solicitudes de archivos de protocolo de transferencia de archivos (FTP) y crear y publicar páginas Web. Las consideraciones al elegir un servidor Web incluyen cuán bien funciona con el sistema operativo y otros servidores, su capacidad para manejar la programación del servidor, las características de seguridad y las herramientas particulares de publicación, motor de búsqueda y creación de sitios que vienen con él.
+        <h2>PUERTA DE ENLACE</h2>
+        Un gateway (puerta de enlace) es un dispositivo, con frecuencia un ordenador, que permite interconectar redes con protocolos y arquitecturas diferentes a todos los niveles de comunicación. Su propósito es traducir la información del protocolo utilizado en una red al protocolo usado en la red de destino.
+        
+        El gateway o «puerta de enlace» es normalmente un equipo informático configurado para dotar a las máquinas de una red local (LAN) conectadas a él de un acceso hacia una red exterior, generalmente realizando para ello operaciones de traducción de direcciones IP (NAT: Network Address Translation). Esta capacidad de traducción de direcciones permite aplicar una técnica llamada IP Masquerading (enmascaramiento de IP), usada muy a menudo para dar acceso a Internet a los equipos de una red de área local compartiendo una única conexión a Internet, y por tanto, una única dirección IP externa.
+       
+        <h2>Direcciones IP Publicas</h2>
+        En una red local habrá varias direcciones IP Privadas y generalmente una dirección IP Pública. Para conectar una red privada con Internet hará falta un “traductor” o NAT (Network Address Translation), que pasará los datos entre las direcciones IP Privadas y las direcciones IP Públicas.
+        
+        La dirección IP Pública es aquella que ofrece el proveedor de acceso a Internet* y se asigna a cualquier equipo o dispositivo conectado de forma directa a Internet. Por ejemplo, los servidores que alojan sitios web, los routers o modems que dan el acceso a Internet. Las direcciones IP Públicas son siempre únicas, es decir, no se pueden repetir. Dos equipos con IP de ese tipo pueden conectarse directamente entre sí, por ejemplo, tu router con un servidor web o dos servidores web entre sí.
+        
+        De hecho, una dirección IP pública a veces se denomina IP de Internet. Es esta dirección la que utiliza cada proveedor de servicios de Internet para reenviar las solicitudes de Internet a un hogar o negocio específico, al igual que la forma en que un vehículo de entrega utiliza su dirección física para reenviar paquetes a tu casa. Piensa en tu dirección IP pública como cualquier otra dirección que tengas, ya sea tu dirección de correo electrónico y la dirección de tu casa son completamente únicas para ti.
+        <h2>Direcciones IP Privadas </h2>
+        Una dirección IP Privada se utiliza para identificar equipos o dispositivos dentro de una red doméstica o privada. Se reservan para ello determinados rangos de direcciones:
+        
+        * Clase A: 10.0.0.0 a 10.255.255.255
+        * Clase B: 172.16.0.0 a 172.31.255.255
+        * Clase C: 192.168.0.0 a 192.168.255.255
+        
+        En una red, las direcciones IP Privadas deberán ser únicas para cada dispositivo o al duplicarlas surgirán problemas. Volviendo al ejemplo del servicio de paquetería, sería como si dos vecinos tuvieran el mismo nombre y la misma dirección, haciendo imposible saber a quién de ellos se deberá realizar la entrega.
+        Ahora bien, las direcciones IP Privadas sí pueden repetirse pero en redes distintas, en cuyo caso no habrá conflictos debido a que las redes se encuentran separadas. De la misma manera que es posible tener dos direcciones iguales pero en distintas ciudades.
+        DNS: Sistema de Nombres de Dominio
+        Las DNS son las siglas que forman la denominación Domain Name System o Sistema de Nombres de Dominio y además de apuntar los dominios al servidor correspondiente, nos servirá para traducir la dirección real, que es una relación numérica denominada IP, en el nombre del dominio.
+        
+        <h2>DNS</h2>
+        Originalmente, los DNS nos sirven para indicarle al usuario a que escriba un dominio a que servidor debe ir a recoger la página web que desea consultar. Efectivamente las páginas web realmente están hospedadas bajo una dirección IP, por ejemplo la pagina web de donde saque esta informacion es www.digival.es la cual pertenece y responde a la IP 85.112.29.231 pero este sistema es capaz de convertir estos números en el nombre de dominio www.digival.es. Es importante recordar que las IP de cada página web sería un trabajo demasiado duro, por eso se creó el sistema de nombres de dominio, para permitir crear términos y denominaciones más fáciles de recordar.
+        
+        Como funcionan las DNS ?
+        ¿Recuerdas los directorios telefónicos? Antes de que internet existiera se utilizaban estos enormes y pesados libros en los que podías encontrar en orden alfabético el teléfono e incluso la dirección de prácticamente cualquiera que tuviera una línea contratada. Los servidores DNS son el equivalente a los directorios telefónicos en la web.
+        
+        Permítenos explicar paso a paso el funcionamiento de un DNS:
+        
+        1. En primer lugar se escribe en el buscador el nombre de la página de internet que deseamos visualizar. Una vez que damos “enter” nuestro dispositivo envía una solicitud de información al servidor DNS, la cual hace la petición explícita para obtener la dirección IP de la página a la que se pretende acceder.
+        2. Una vez que el servidor DNS recibe dicha petición, hace una búsqueda en su base de datos para localizar la dirección IP asociada al nombre de dominio previamente tecleado. En cuanto la localiza, la reenvía al dispositivo inicial de búsqueda.
+        3.Finalmente, cuando el dispositivo recibe la dirección IP, busca el servidor con dicha ubicación, y al encontrarlo, descarga la información de la página para hacerla visible al usuario..
+        <h2>FIREWALL</h2>
+        Un firewall es un dispositivo de seguridad de la red que monitorea el tráfico de red -entrante y saliente- y decide si permite o bloquea tráfico específico en función de un conjunto definido de reglas de seguridad. Los firewalls han constituido una primera línea de defensa en seguridad de la red durante más de 25 años. Establecen una barrera entre las redes internas protegidas y controladas en las que se puede confiar y redes externas que no son de confianza, como Internet. Un firewall puede ser hardware, software o ambos...
+        <h2>TIPOS DE FIREWALL </h2>
+        Firewall proxyl
+        Un firewall proxy, uno de los primeros tipos de dispositivos de firewall, funciona como gateway de una red a otra para una aplicación específica. Los servidores proxy pueden brindar funcionalidad adicional, como seguridad y almacenamiento de contenido en caché, evitando las conexiones directas desde el exterior de la red. Sin embargo, esto también puede tener un impacto en la capacidad de procesamiento y las aplicaciones que pueden admitir.
+        
+        Firewall de inspección actival
+        Un firewall de inspección activa, ahora considerado un firewall “tradicional”, permite o bloquea el tráfico en función del estado, el puerto y el protocolo. Este firewall monitorea toda la actividad, desde la apertura de una conexión hasta su cierre. Las decisiones de filtrado se toman de acuerdo con las reglas definidas por el administrador y con el contexto, lo que refiere a usar información de conexiones anteriores y paquetes que pertenecen a la misma conexión.
+        
+        Firewall de administración unificada de amenazas (UTM)
+        UUn dispositivo UTM suele combinar en forma flexible las funciones de un firewall de inspección activa con prevención de intrusiones y antivirus. Además, puede incluir servicios adicionales y, a menudo, administración de la nube. Los UTM se centran en la simplicidad y la facilidad de uso.
+        
+        Firewall de próxima generación (NGFW)
+        Los firewalls han evolucionado más allá de la inspección activa y el filtrado simple de paquetes. La mayoría de las empresas están implementando firewalls de próxima generación para bloquear las amenazas modernas, como los ataques de la capa de aplicación y el malware avanzado. Según la definición de Gartner, Inc., un firewall de próxima generación debe incluir lo siguiente: Funcionalidades de firewall estándares, como la inspección con estado Prevención integrada de intrusiones Reconocimiento y control de aplicaciones para ver y bloquear las aplicaciones peligrosas Rutas de actualización para incluir fuentes de información futuras Técnicas para abordar las amenazas de seguridad en evolución Si bien estas funcionalidades se están convirtiendo cada vez más en el estándar para la mayoría de las empresas, los NGFW pueden hacer más..
+        
+        Como funciona un Firewall?
+        Un firewall funciona como una barrera entre internet u otras redes públicas y nuestra computadora. Todo el tipo de tráfico que no esté en la lista permitida por el firewall, no entra ni sale de la computadora.
+        Para ello, un sistema de firewall contiene un conjunto de reglas predefinidas que permiten:
+        
+        1.Autorizar una conexión (Allow)
+        2.Bloquear una conexión (Deny)
+        3.Redireccionar un pedido de conexión sin avisar al emisor (Drop).
+        
+        El conjunto de estas reglas permite instalar un método de filtración dependiente de la política de seguridad adoptada por la organización. Se distinguen habitualmente dos tipos de políticas de seguridad que permiten: Permitir únicamente las comunicaciones autorizadas explícitamente: “Todo lo que no es autorizado explícitamente está prohibido”. Impedir cualquier comunicación que fue explícitamente prohibida. El primer método es el más seguro, pero requiere de una definición precisa de las necesidades de comunicación de toda la red.
+        <h2>WEBHOSTING Y DOMINIO </h2>
+        El Web Hosting, también conocido como Hospedaje Web, es el espacio en un servidor donde se almacenan o guardan todos los datos e información de un sitio de Internet como: landing pages (páginas HTML), imágenes, videos, documentos, correos electrónicos o cualquier otro contenido.
+        
+        Dominio: Un dominio es el nombre único que identifica a un Sitio Web en Internet. Consiste de dos partes fundamentales: el nombre (pueden incluir números y guiones) y la extensión (o extensiones)
+        
+        <h2> FTP</h2>
+        FTP (File Transfer Protocol) es un protocolo de transferencia de archivos entre sistemas conectados a una red TCP basado en la arquitectura cliente-servidor, de manera que desde un equipo cliente nos podemos conectar a un servidor para descargar archivos desde él o para enviarle nuestros propios archivos independientemente del sistema operativo utilizado en cada equipo.
+        
+        <h2> HTML</h2>
+        Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros
+        <h2> CSS</h2>
+        Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera.
+    
+    </div>
+    
+</body>
+</html>
