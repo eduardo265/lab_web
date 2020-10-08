@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 3</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #grad1 {
+          height: 100%;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } </style>
+        <header class="header-p">
+            <h1 class="h1-t1">
+                TRABAJO 3
+            </h1>
+        </header>
+</head>
+<body id="grad1">
+    <nav>
+            <a href="index.html"class="nav-p"> Inicio </a>
+            <a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+            <a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+    </nav>
+    <div>
+       <h2> CSS (Cascading style sheet)</h2>
+CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente, pero hay otros estilos no tan obvios. Por ejemplo: el estilo por defecto para un elemento heading 1 incluye unos márgenes de 10 pixels por encima y por debajo del texto. Si queremos modificar el estilo de h1 para que no lleve márgenes, tendremos que indicar de manera explícita unas reglas que conviertan dichos valores a cero.
+Ejemplos de la estructura de un CSS interno.
+<br>
+Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así:
+<li>h1 llave</li>
+<li>margin-top:0px;</li>
+<li>margin-bottom:0px;</li>
+<li>background-color:#ff00ff;</li>
+<li>font-family: Arial;</li>
+<li>llave</li>
+<br>
+<h2>Un poco de historia del CSS</h2>
+El CSS nos sirvio para la creatividad del programador web, Aunque en este resumen se abordaran temas relacionados a crear un diseño visual de página utilizando estilos CSS, debes saber que esto no ha sido siempre la técnica normal. Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear para crear estructuras visuales complejas, como por ejemplo la presentación en varias columnas, consistía en emplear el elemento tabla (table). La tabla HTML estaba pensada inicialmente para mostrar datos de manera estructurada, en filas, columnas y celdas. Sin embargo los diseñadores empezaron a utilizar este elemento como base para las estructuras visuales de las páginas. En aquel momento esa técnica estaba plenamente justificada: las tablas era lo único que tenían para generar el tipo de diseños que se necesitaban y, además, eran un recurso extremadamente flexible.
+CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos de tabla de HTML van regresando, poco a poco, a su función original, que es la de mostrar datos estructurados, y abandonan su papel como armazón visual de las páginas. Seguramente podrás seguir encontrando numerosos ejemplos de este tipo de estructuras en la web, pero en este libro no vas a aprender a crearlas, sino que vas a aprender los conceptos básicos de CSS que nos permiten obtener los mismos resultados.
+Tabla con atributos
+La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una imagen. Este estilo ha sido tomado del diseño de imprenta, donde a este efecto se le llama “justificación” del texto. CSS consigue el mismo efecto haciendo que los elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición relativa con respecto a él. Este comportamiento también nos sirve para crear columnas en una página. En la imagen de la izquierda hay un gráfico anidado dentro de un párrafo. El gráfico ocupa un espacio vertical completo y el texto posterior se empieza a escribir a partir de su esquina inferior derecha, ya que no se ha aplicado aquí la propiedad float. En la imagen de la derecha, los elementos son los mismos, pero hemos aplicado la regla float: right al gráfico. El gráfico se desplaza a la derecha todo lo que puede y el texto se escribe a su izquierda a partir del primer punto disponible de su contenedor (en este caso, la esquina superior izquierda del div contenedor)
+<h2>¿Que es un CSS?</h2>
+CSS, es una tecnología que nos permite crear páginas web de una manera más exacta. Gracias a las CSS somos mucho más dueños de los resultados finales de la página, pudiendo hacer muchas cosas que no se podía hacer utilizando solamente HTML, como incluir márgenes, tipos de letra, fondos, colores...
+CSS son las siglas de Cascading Style Sheets, en español Hojas de estilo en Cascada. En este reportaje vamos a ver algunos de los efectos que se pueden crear con las CSS sin necesidad de conocer la tecnología entera.
+Las Hojas de Estilo en Cascada se escriben dentro del código HTML de la página web, solo en casos avanzados se pueden escribir en un archivo a parte y enlazar la página con ese archivo. En un principio vamos a utilizar la manera más directa de aplicar estilos a los elementos de la página, mas adelante veremos la declaración en archivos externos. Para ello, y esto es la primera lección de este artículo, vamos a conocer un nuevo atributo que se puede utilizar en casi todas las etiquetas HTML: style.
+
+
+w3schools acerca del CSS
+CSS es un lenguaje que describe el estilo de un documento de html. el CSS es lo que describe como los elementos del HTML seran presentados
+
+
+<h2>
+    Que es CSS?</h2>
+Hoja de estilos en cascada
+CSS describe como los elementos HTML son mostrados en la pantalla, papel o cualquier otro tipo de representacion
+CSS nos ayuda a ahorrarnos trabajo puesto que puede controlar multiples paginas web al mismo tiempo.
+Hojas de estilo externas son almacendadas en los archivos CSS
+<h2>Por que usar CSS?</h2>
+CSS es utilizado para definir el estilo de tu pagina web, incluyendo el diseño, formacion y variaciones en el display para diferentes dispositivos y tamaños de pantalla.
+El CSS resolvio un gran problema
+HTML nunca fue diseñado para contener etiquetas para formatear una pagina web! HTML fue creado para describir el contenido de la pagina web, por ejemplo: < h1>Esto es un encabezado < p>Este es un parrafo. Cuando etiquetas como , y atributos de colores fueron agregadas a las especificaciones el HTML 3.2, comenzo una pesadilla para los desarrolladores web. Desarrollo de sitios web graindes, donde fuentes e informacion de color fueron agregados a cada pagina,esto se convirto en un proceso extenso y caro. para resolver este problema, el consortium de la web global (w3c por sus siglas en ingles) creo el CSS. Con esto el CSS removio el formateo de stilo de la pagina de HTML!
+<h2>Syntax del CSS</h2>
+Las reglas del CSS consiste en un selector y un bloque de declaraciones
+El selector apunta hacia a el elemento de HTML que quieres estilizar. El bloque de declaracion contiene una o mas declaraciones separadas por puntos y comas. Cada declaracion incluye una propiedad de CSS y su valor, separados por una coma. Una declaracion de CSS siempre termina con un punto y coma y los bloques de declaracion son rodeados por llaves.
+<div>
+    <br><br><br>
+    <img src="https://www.w3schools.com/css/selector.gif" alt="imagen de muestra syntaxis">
+    <br><br><br>
+</div>
+<h2>CONCLUSIONES</h2>
+José Eduardo Cavazos Valdez 1922220:
+Con lo que e leido y visto que las paginas tambien se pueden modificar para tener una mejor vista a este proceso se le llama CSS.
+Se pueden modificar color de letra, tamaño, fuente, entre vriasa cosas, es una muy buena herramienta para que la pagina web tenga una mejor vista para el usuario.
+lo estare utilizando de ahora en adelante para mis trabajos y me podra servir entrando al area laboral y me pidan modificaciones de este tipo.
+<br><br><br> 
+Gustavo Raschid Marcos Fernandez 1804257:
+He concluido que el CSS es una nueva puerta para la edición de páginas Webs, gracias a esta podemos darle un estilo más profesional a nuestra página o dominio web Me pareció genial ver qué podemos cambiar la letra, el color, el tamaño entre otras características.
+<br><br><br>
+Rodríguez Gordiano Jenny Yaretsi 1843571:
+Al terminar esta leccion aprendi la importancia del uso del CSS en las paginas web, sus utilidades eh implementaciones en sitos en linea, aun cuando se dificulte un poco por falta de practica solamente es de reforzar y puedo concluir que el CSS es un elemento vital en el desarrollo web
+Gustavo Alan Piña Pérez 1859124:
+Las CSS son muy importantes en el diseño, nos facilitan muchas cosas respecto a la edición en los sitios WEB, además de que se vuelve más fácil para el usuario que quiera utilizarlo.
+<br><br><br>
+Luis Javier Contreras Hernandez 1676300:
+En conclusion, podemos cambiarle el estilo a las paginas que queramos si integramos CSS en el codigo. Se puede modificar tanco el tamaño, fuente, color y muchas otrsa cosas. terminando esta practica, aprendi el uso de CSS
+<br><br><br>
+</div>
+</body>
+</html>
