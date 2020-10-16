@@ -1,0 +1,99 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 4</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #grad1 {
+          height: 100%;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } </style>
+        <header class="header-p">
+            <h1 class="h1-t1">
+                TRABAJO 4
+            </h1>
+        </header>
+</head>
+<body id="grad1">
+
+    <nav>
+            <a href="index.html" class="nav-p"> Inicio </a>
+            <a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+            <a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+    </nav>
+    <div>
+       <h2> Estructura HTML</h2>
+Uno de los conceptos imprescindibles que debemos dominar a la hora de diseñar contenidos web es la estructura anidada de los documentos HTML. Los elementos suelen presentarse contenidos unos dentro de otros. Por lo general tenemos que empezar por diseñar la estructura HTML de la página para después continuar con los estilos, aplicando CSS.
+En este ejemplo podemos ver los elementos más básicos que nos vamos a encontrar en prácticamente toda página web:
+<br>
+
+<li>abrir html</li>
+<li>abrir body</li>
+<li> Parrafo x</li>
+<li>cerrar body</li>
+<li>cerrar html</li>
+<br>
+<h2>Como insertar imagenes en HTML</h2>
+Para colocar imágenes dentro de un documento HTML se utiliza la etiqueta img. Al igual que ocurre con la etiqueta "< a >", la etiqueta de imagen por sí sola no hace nada. Depende del valor de los atributos que especifiquemos, que indican qué imagen se debe mostrar y cómo ha de hacerse. Aquí vamos a insertar una imagen en nuestro documento HTML.
+A continuacion veremos el formato recomendado para agregar una imagen a cualquier pagina web
+(img src="User/images/imagenejemplo.jpg" ) Este es un ejemplo para demostrar el formato de insertar imagenes en el HTML sin usar CSS, dicha línea le indica al navegador que busque dentro del equipo user en la carpeta images y presente en pantalla el archivo imagenejemplo.jpg. En los pasos siguientes debemos asegurarnos de que se mantiene el espacio en blanco de separación entre la comilla y el cierre de la etiqueta. Ahora vamos a añadir un atributo alt, dicho atributo representa el texto alternativo a la imagen, y es obligatorio añadirlo para mantener la validez de la página. Este atributo es muy útil para las personas que utilizan sistemas de lectura de pantalla para navegar por la Web, ya que permite convertir a voz el texto indicado como valor. También sirve para dar un contenido al espacio vacío que se genera cuando, la imagen no se puede representar (porque el enlace está roto o el archivo tiene un formato incorrecto, por ejemplo)
+Tanto el atributo src como el alt son obligatorios bajo XHTML. Hay también otros atributos, opcionales, que podemos utilizar.
+Vamos a ver dos de ellos: height y width.
+<h2>PAPEL CSS</h2>
+CSS es un lenguaje utilizado en la presentación de documentos HTML. Un documento HTML viene siendo coloquialmente “una página web”. Entonces podemos decir que el lenguaje CSS sirve para organizar la presentación y aspecto de una página web. Este lenguaje es principalmente utilizado por parte de los navegadores web de internet y por los programadores web informáticos para elegir multitud de opciones de presentación como colores, tipos y tamaños de letra, etc.
+1- Definición en línea: En este método se define las propiedades de la etiqueta HTML con el atributo style dentro del mismo archivo HTML y se le asigna una determinada cadena que definiría el comportamiento.
+En este ejemplo asignamos en línea a la etiqueta p el style (style es estilo en inglés) definido, en el que la propiedad color toma el valor red de modo que el texto se mostrará en rojo. Esta opción de definición, es rápida y para pequeñas cosas o reparaciones de mantenimiento web puede ser útil, pero si se abusa de esta técnica tendremos una página web muy poco legible ya que tendremos en un mismo archivo el contenido de la página web junto con su presentación. Hacer cambios en la presentación se hace entonces más complicado, al tener que ir revisando todas las etiquetas que queramos cambiar una por una.
+2- Definición hoja de estilos interna:En este método se definen las propiedades de estilo de la misma manera que hacíamos en el archivo css independiente, pero en este caso se hace en la misma página entre las etiquetas head.
+
+
+
+
+<h2>
+    La estructura de la pagina web se basa en HTML</h2>
+El lenguaje de marcas de hipertexto, HTML o (HyperText Markup Language) se basa en el metalenguaje SGML (Standard Generalized Markup Language) y es el formato de los documentos de la World Wide Web. El World Wide Web Consortium (W3C) es la organización que desarrolla los estándares para normalizar el desarrollo y la expansión de la Web y la que publica las especificaciones relativas al lenguaje HTML.
+Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares < >, que tienen funciones y usos específicos y se utilizan para escribir código HTML.
+Las etiquetas o tags son la forma de escribir código HTML.
+En HTML existen etiquetas de apertura y etiquetas de cierre, tienen la forma: <etiqueta> </etiqueta>. Donde <etiqueta> es la etiqueta de apertura y </etiqueta> es la etiqueta de cierre indicada por la diagonal. HTML tiene definidas gran variedad de etiquetas para distintos usos.
+Aunque la mayoría de las etiquetas tienen su etiqueta de apertura y etiqueta de cierre, es importante aclarar que no todas las etiquetas tienen su correspondiente etiqueta de cierre.
+<h2>Detalles de la sintaxis de XHTML</h2>
+Sintaxis XHTML es muy similar al HTML sintaxis y casi todos los elementos HTML en XHTML válido. Pero cuando se escribe un documento XHTML tienes que pagar un poco más de atención para hacer que su documento HTML a XHTML compatible.
+Aquí están los puntos importantes para recordar cuando escribir un nuevo documento XHTML o convertir los documento HTML a XHTML documento:
+<br>
+
+<li>Se necesita para escribir una declaración DOCTYPE en el inicio del documento XHTML.</li>
+<li>Usted debe escribir todas las etiquetas y atributos XHTML sólo en minúsculas.</li>
+<li>Tiene que cerrar todas las etiquetas XHTML correctamente.</li>
+<li>Debe consignar todos los valores de atributo.</li>
+<li>Atributo minimización está prohibido.</li>
+<li>El id atributo sustituye el atributo name.</li>
+<li>El idioma atributo de la etiqueta script está en desuso.</li>
+<li>Usted necesidad de anidar todas las etiquetas correctamente.</li>
+<br>
+<h2>Doctype indica al navegador qué debe esperar</h2>
+Esta declaración debe ser la primera línea de nuestro documento y es necesaria para decirle al navegador qué versión de HTML es la que se usa en la página. Si no se hace, el navegador procesara la página en modo Quirks (modo de compatibilidad) pudiendo no interpretar correctamente el código de la página.
+<h2>El W3C y la validación de la página</h2>
+La validación W3C no es más que un servicio de verificación estándar para las hojas de estilo (CSS) de una web. Ahora bien, ¿Qué son las hojas de estilo de una web (Cascading Style Sheets)? quizá te sonará un poco a chino, por eso creo que vale la pena hacer una pequeña explicación antes de entrar en materia.
+Las Hojas de estilo llamado muy comúnmente CSS es simplemente el lenguaje que rige y organiza el aspecto visual de una página web. Digamos que es el código que se utiliza para definir los colores, tipos de letras, tamaños, márgenes, ubicación de elementos, etc... Pues bien la genialidad es este código es que funciona como una ventana aparte de la estructura general de la página web, de modo que todo el código que rige el aspecto visual de la web queda separado de todo el contenido de la web permitiendo manejar de manera mucho más sencilla y ágil sin comprometer otros aspectos de programación como lo sería núcleo.
+<br><br><br>
+<h2>CONCLUSIONES</h2>
+José Eduardo Cavazos Valdez 1922220:
+La forma en la que se basa html es una forma muy sencilla de manejar y poder modificar para crear tus primeras paginas web, ademas existen validadores que te ayudan a evaluar tu pagina para ver si su codigo esta escrito correctamente y si tienes un error te lo hace saber para que lo puedas corregir esta herramienta es muy util para personas que no estan muy acostrumbradas ha trabajar con codigo.
+<br><br><br> 
+Gustavo Raschid Marcos Fernandez 1804257:
+He concluido que el XHTML es muy util para realizar cualquier actividad dicese basica o con poca dificultad, mas sin embargo el CSS es un muy buen complemento para agregar diseño y estilo a una pagina web, fue divertido y emocionante redescubrir el formato de XHTML y comparar sus similitudes con CSS, todo esto con el fin de aprender que hay mas de una manera para hacer una pagina web.
+<br><br><br>
+Rodríguez Gordiano Jenny Yaretsi 1843571:
+yo a la conclusion que XHTML es demasiado bueno, ya que es una version mejorada del html, tambien llegamos a conocer las caracteristicas de html, asi poco a poco nos vamos adentrando en lo que es la creacion de paginas web.
+<br><br><br>
+Gustavo Alan Piña Pérez 1859124:
+En linea. Aunque está en desuso, puede utilizarse en caso de crear solamente una página y que esta contenga poco estilo insertado.
+Con estilo insertado en la cabecera del documento. Como en el anterior caso puede ser un método eficaz, cuando el sitio o página web tan solo contiene una o unas pocas páginas.
+Con una Hoja de estilo exterior al documento html. Este es el método más eficaz cuando el sitio posee muchas páginas a aplicar estilo.
+<br><br><br>
+Luis Javier Contreras Hernandez 1676300:
+Aprender estos tipos de conceptos en HTML es muy importante ya que se pueden utilizar a medida que vas haciendo una pagina web ya sea para alguna practica que se tenga o tambien para cualquier pagina que se nos haya encargado ademas de que el aprender a manejar correctamente el css y html es de suma importancia si es que uno se quiere dedicar al front end en desarrollo web.
+<br><br><br>
+</div>
+
+</body></html>
