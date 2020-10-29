@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Trabajo 5 </title>
+		<link rel="stylesheet" href="estilos.css">
+		<style>
+			
+        #grad1 {
+          height: 2600px;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } 
+		</style>
+	</head>
+	<body>
+		<header class="header-p">
+			<h1 class="h1-t1">
+				Trabajo 5
+			</h1>
+		</header>
+		<nav>
+			<a href="index.html" class="nav-p"> Inicio </a>
+			<a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+			<a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+		</nav>
+		<div id="grad1">
+			<h2>El uso de la etiqueta button</h2>
+			<input type="button" value="¿Da click aqui para ver mas información?" onclick="alert(&quot;Mas información: https://docs.microsoft.com/es-es/previous-versions/msdn10/hh749023&quot;)">
+			<br>
+			<hr>
+			<h2>El uso de la etiqueta nav, junto la etiqueta ancla a y la etiqueta href para el redireccionamiento de paginas web.</h2>
+			<nav>
+				<ul>
+					<li>
+						<a href="file:///C:/Users/Gustavo/AppData/Local/Temp/Rar$EXa17084.9680/index.html">Home</a>
+					</li>
+					<li>
+						<a href="file:///C:/Users/Gustavo/AppData/Local/Temp/Rar$EXa17084.9680/lab_web_t1.html">Practica 1</a>
+					</li>
+					<li>
+						<a href="file:///C:/Users/Gustavo/AppData/Local/Temp/Rar$EXa17084.9680/lab_web_t2.html">Practica 2</a>
+					</li>
+					<li>
+						<a href="file:///C:/Users/Gustavo/AppData/Local/Temp/Rar$EXa17084.9680/lab_web_t3.html">Practica 3</a>
+					</li>
+					<li>
+						<a href="file:///C:/Users/Gustavo/AppData/Local/Temp/Rar$EXa17084.9680/lab_web_t4.html">Practica 4</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/groups/prograweb/">Facebook Group</a>
+					</li>
+				</ul>
+			</nav>
+			<br>
+			<hr>
+			<aside>
+				<h2>Explicacion del NAV usando ASIDE</h2>
+				<p>
+					En el ejemplo anterior,pudimos ver como sirve la etiqueta nav junto con links de redireccionamiento hacia las practicas pasadas asi tambien del grupo de la materia de facebook para ejemplificar uno de los usos de nav, cabe recalcar que este parrafo esta hecho gracias a la ayuda de la etiqueta aside.
+				</p>
+			</aside>
+			<br>
+			<hr>
+			<h2>Uso de la etiqueta figure y figure y fugcaption</h2>
+			<figure style="float: right">
+				<img src="facebook.jpg">
+				<figcaption>Imagen alusiva a un meme</figcaption>
+			</figure>
+			<p>
+				Los animales acuáticos que respiran a través de branquias hacen el intercambio de gases con el agua. La cantidad de oxígeno que contiene el agua es menor que la del aire, por lo que estos animales adaptados a estas condiciones necesitan sistemas muy eficaces capaces de extraer el oxígeno del agua.
+			</p>
+			<p>
+				Se denominan animales acuáticos a los animales que viven en el agua durante toda o la mayor parte de su vida. El término se aplica tanto a los que viven en agua dulce como en salada.
+			</p>
+			<p>
+				Los animales acuáticos están distribuidos por toda la escala zoológica siendo casi exclusivamente acuáticos, los de grupos inferiores (protozoos), así como los espongiarios, los pólipos y los equinodermos, gran número de gusanos, la mayor parte de los moluscos y todos los braquiados y tunicados.
+			</p>
+			<br>
+			<hr>
+			<h2> Ahora 2 frases usando q y blockquote para que se observe la diferencia de las citas en HTML</h2>
+			<h3>Usando q: Que sirve para agregar &lt; &gt; a una frase.</h3>
+			<p>
+				Como dijo Benito Juarez
+				<q>
+					"El respeto al derecho ajeno es la paz"
+				</q>
+			</p>
+			<h2> Usando blockquote: Que lo pone formal y como en un libro respetable.</h2>
+			<p>A Great Motivational Quote :</p>
+			<blockquote cite="https://www.brainyquote.com/authors/eleanor_roosevelt_143006"> 
+			<p>  
+				With the new day comes,new strenght and new throughts  
+			</p>  
+			</blockquote>
+			<cite>Eleanor Roosevelt</cite>
+			<br>
+			<br>
+			<hr>
+			<h2> A continuacion anexe junto con la etiqueta audio una canción.</h2>
+			<audio src="Worlds2018.mp3" preload="none" controls=""></audio>
+			<audio src="Worlds2018.mp3" autoplay="" loop=""></audio>
+			<br>
+			<hr>
+			<h2> A continuacion anexe junto con la etiqueta video, pues un video.</h2>
+			<video src="video.webm" poster="presentacion.jpg" controls=""></video>
+			<video src="video.mp4" autoplay="" muted="" loop=""></video>
+			<br>
+			<hr>
+			<footer>
+				<h3 style= text-align:left;>
+					Copyright © 2020 Equipo #30 Jueves M6, Todos los derechos reservados.
+					<p></p>
+				</h3>
+			</footer>
+		</div>
+	</body>
+</html>
