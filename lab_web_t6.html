@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 6</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #grad1 {
+          height: 100%;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } </style>
+        <header class="header-p">
+            <h1 class="h1-t1">
+                TRABAJO 6
+            </h1>
+        </header>
+</head>
+<body id="grad1">
+    <nav>
+        <a href="index.html"class="nav-p"> Inicio </a>
+        <a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+        <a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+        <div>
+        	<div align="center">
+        	<h2>Uso del canvas en HTML 5</h2>
+        	</div>
+            	
+	<canvas id="dibujo" width="1000" height="300" style="border: 3px solid black"></canvas>
+	<script type="text/javascript">
+		var a = document.getElementById("dibujo");
+		var ctx = a.getContext("2d");
+		ctx.beginPath();
+    	ctx.arc(500,150,70,0,Math.PI*2,true);
+    	ctx.moveTo(545,150);
+    	ctx.arc(500,150,45,0,Math.PI,false);
+    	ctx.moveTo(495,140);
+   		ctx.arc(485,140,10,0,Math.PI*2,true); 
+    	ctx.moveTo(525,140);
+   		ctx.arc(515,140,10,0,Math.PI*2,true); 
+    	ctx.stroke();
+
+
+	</script>
+        </div>
+
+</body>
+</html>
