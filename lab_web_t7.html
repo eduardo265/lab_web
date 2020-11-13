@@ -1,0 +1,111 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 7</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #grad1 {
+          height: 150%;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } </style>
+        <header class="header-p">
+            <h1 class="h1-t1">
+                TRABAJO 7
+            </h1>
+        </header>
+</head>
+<body id="grad1">
+    <nav>
+        <a href="index.html"class="nav-p"> Inicio </a>
+        <a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+        <a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+    </nav>
+    <br><br><br>
+    <h3>Instrucciones: Relaciona las imagenes en el cuadro que contenga su nombre</h3>
+    <script type="text/javascript">
+		function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drag(event) {
+  event.dataTransfer.setData("text", event.target.id);
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("text");
+  event.target.appendChild(document.getElementById(data));
+}</script>
+
+<div id="dropZone">
+  <div
+    id="dropBox1"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)"
+  >
+    <p>Borrador</p>
+  </div>
+  <div
+    id="dropBox2"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)"
+  >
+    <p>Oso</p>
+  </div>
+  <div
+    id="dropBox3"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)"
+  >
+    <p>Computadora</p>
+  </div>
+  <div
+    id="dropBox4"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)"
+  >
+    <p>Lapiz</p>
+  </div>
+</div>
+
+<div
+  id="animals"
+  ondrop="drop(event)"
+  ondragover="allowDrop(event)"
+>
+  <img
+    id="oso"
+    src="imagenes\oso.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="300"
+  />
+
+  <img
+    id="computadora"
+    src="imagenes/computadora.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="300"
+  />
+
+  <img
+    id="lapiz"
+    src="imagenes/lapiz.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="300"
+  />
+
+  <img
+    id="borrador"
+    src="imagenes/borrador.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="300"
+  />
+</div>
+
+</body>
+</html>
