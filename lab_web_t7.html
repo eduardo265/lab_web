@@ -1,0 +1,62 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 7</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #grad1 {
+          height: 150%;
+           background-color: white; /* para usuarios que no soportan gradientes */
+          background-image: linear-gradient(to top , rgb(245, 198, 181), white);
+        } </style>
+        <header class="header-p">
+            <h1 class="h1-t1">
+                TRABAJO 7
+            </h1>
+        </header>
+</head>
+<body id="grad1">
+    <nav>
+        <a href="index.html"class="nav-p"> Inicio </a>
+        <a href="https://www.uanl.mx/" class="nav-p">UANL</a>
+        <a href="lab_web_t.html" class="nav-p">Lista de Trabajos</a>
+    </nav>
+    <div 
+		<br><br><hr><br><br>
+
+		<canvas id="cv" width="1000" height="500" style="border:5px solid black;"></canvas>
+		<script>
+		var c = document.getElementById("cv");
+		var ctx = c.getContext("2d");
+
+		// Create gradient
+		var grd = ctx.createLinearGradient(0, 0, 1000, 500);
+		grd.addColorStop(0, "green");
+		grd.addColorStop(1, "blue");
+
+		// Fill with gradient
+		ctx.fillStyle = grd;
+		ctx.fillRect(0, 0, 1000, 500);
+		</script>
+
+		<script type="text/javascript">
+			var cnv, ctx, pos_x = 0, img;
+			function anim(){
+				ctx.drawImage(c,pos_x,0);
+				pos_x +=1;
+				setTimeout(anim, 50);
+			}
+			window.onload = function(){
+				var c = document.getElementById("cv");
+				var ctx = c.getContext("2d");
+				ctx.beginPath();
+				ctx.arc(95, 100, 40, 0, 2 * Math.PI);
+				ctx.stroke();
+				ctx.fillStyle = 'rgb(255, 255, 0)';
+				ctx.fill();
+				anim();
+			};
+		</script>
+
+		<br><br><hr><br><br>
+</body>
